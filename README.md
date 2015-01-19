@@ -77,12 +77,12 @@ Contact FPGA is done, but Flash is another problem.
     
 ####JTAG
   * http://www.fpga4fun.com/JTAG.html
-    *Very very useful for newbie like me.
+    * Very very useful for newbie like me.
     
 ####FPGA Course
   * http://hamsterworks.co.nz/mediawiki/index.php/Main_Page
   * http://hamsterworks.co.nz/mediawiki/index.php/MiniSpartan6%2B_bringup
-    *I am testing my program function by this ledtest project.
+    * I have verified function by this ledtest project.
 
 ##Development Task List
 - [x] FPGA Configuration
