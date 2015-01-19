@@ -35,6 +35,7 @@ Pre-requirement:
 * 2. Review and figure how to compile to dll or exe.
 * 3. if you need default parameter for msp6prog, trace msp6para.py .
 * 4. Rewrite new operation for FPGA by JTAG Interface.
+* 5. I build DLL on Visual C++ 2008 Express.
 
 ##Software Structure
 
