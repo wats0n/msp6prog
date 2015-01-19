@@ -12,13 +12,13 @@ Pre-requirement:
 1. Intall driver from http://www.ftdichip.com/Drivers/D2XX.htm
 2. Check only one FT2232H Device (Minispartan6+) plug on the USB.
 
-*Easy Way:* 
-1. Download packed executable: msp6prog_v0.1_win32.7z
+####Easy Way#### 
+1. Download packed executable: [msp6prog_v0.1_win32.7z](./win32_executable/msp6prog_v0.1_win32.7z)
 2. Extract and execute msp6prog.exe
 3. Select Bitstream file and wait finish information on console.
 ![MSP6 Example](/images/msp6prog_v0.1_usecase.png)
 
-Hard Way:
+**Hard Way**
 1. Ready Python 2.7 Environment, needs:
   * Python 2.7, python-2.7.9_x86.msi
   * wxPython for py27, wxPython3.0-win32-3.0.2.0-py27.exe
@@ -30,8 +30,8 @@ Hard Way:
   * ftd2xx.dll - FTDI support APIs for FT2232H.
 3. Execute msp6prog.py in console or IDLE to invoke window.
 
-Very Hard Way:
-1. Download DLL source file: msp6prog_dll_src_v0.1.7z
+*Very Hard Way*
+1. Download DLL source file: [msp6prog_dll_src_v0.1.7z](./msp6prog_dll_src/msp6prog_dll_src_v0.1.7z)
 2. Review and figure how to compile to dll or exe.
 3. if you need default parameter for msp6prog, trace msp6para.py .
 4. Rewrite new operation for FPGA by JTAG Interface.
