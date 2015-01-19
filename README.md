@@ -84,8 +84,12 @@ Contact FPGA is done, but Flash is another problem.
   * http://hamsterworks.co.nz/mediawiki/index.php/MiniSpartan6%2B_bringup
     *I am testing my program function by this ledtest project.
 
-##License
+##Development Task List
+- [x] FPGA Configuration
+- [ ] Flash Programming
+  * http://www.scarabhardware.com/forums/topic/boot-from-on-board-spi-flash/
 
+##License
 I choose MIT License for free to use this program.
 Because I think the most important for programming is algorithm design and data structure arrangement.
 Good document and specification should contain these information, not only in the codes.
