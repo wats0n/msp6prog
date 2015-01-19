@@ -73,7 +73,7 @@ Contact FPGA is done, but Flash is another problem.
   * AN_108_Command_Processor_for_MPSSE_and_MCU_Host_Bus_Emulation_Modes.pdf
   * D2XX_Programmer's_Guide(FT_000071).pdf
   * http://www.ftdichip.com/Support/SoftwareExamples/MPSSE.htm#JTAG0
-    *Good start point form this example.
+    * Good start point form this example.
     
 ####JTAG
   * http://www.fpga4fun.com/JTAG.html
