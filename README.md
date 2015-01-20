@@ -1,10 +1,10 @@
 ##msp6prog - Minispartan6+ Configure Tool
 
-This is a side-project on `Windows` for understanding the interaction between `FT2232H` and `Spartan6` FPGA.
-msp6prog use `JTAG` as configuration interface for FPGA.
-Program support a GUI interface under Windows system by wxPython.
-Control hardware using FTDI API (ftdXX.dll) by msp6prog.dll build from Visual C++ 2008 Express.
-Tested on Win7 x64 with Minispartan6+ [6SLX9].
+This is a side-project on `Windows` for understanding the interaction between `FT2232H` and `Spartan6` FPGA. msp6prog use `JTAG` as FPGA configuration interface.
+  * GUI interface on Windows implemented by wxPython.
+  * Control hardware msp6prog.dll build from Visual C++ 2008 Express.
+    *Using FTDI API (ftdXX.dll).
+  * Tested on Win7 x64 with Minispartan6+ [6SLX9].
 This tool would to be useful, but may not comprehensive for all condition.
 
 I wish it could be ready Flash Programming function for the course
