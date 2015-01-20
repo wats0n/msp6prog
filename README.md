@@ -121,7 +121,7 @@ FPGA Configuration is done, but Flash Programming is another problem.
 ####FPGA Course
   * http://hamsterworks.co.nz/mediawiki/index.php/Main_Page
   * http://hamsterworks.co.nz/mediawiki/index.php/MiniSpartan6%2B_bringup
-    * I have verified function by this ledtest project.
+    * I have verified function by this wiki `ledtest` project.
 
 ##Development Task List
 - [x] FPGA Configuration
