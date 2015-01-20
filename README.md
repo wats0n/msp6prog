@@ -7,8 +7,10 @@ Control hardware using FTDI API (ftdXX.dll) by msp6prog.dll build from Visual C+
 Tested on Win7 x64 with Minispartan6+ [6SLX9].
 This tool would to be useful, but may not comprehensive for all condition.
 
-I wish it could be ready Flash Programming function before the course
-`6.004.2x Computation Structures: Programmable Architectures`.
+I wish it could be ready Flash Programming function for the course
+`6.004.2x Computation Structures: Programmable Architectures` on edX.org.
+I want to implement the programmable architecture on Minispartan6+.
+
 But there is no clear schedule to accomplish it.
 
 ##How to use?
