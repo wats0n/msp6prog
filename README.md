@@ -1,15 +1,21 @@
 ##msp6prog - Minispartan6+ Configure Tool
 
-This is a side-project for understanding the interaction between `FT2232H` and `Spartan6` FPGA.
+This is a side-project on `Windows` for understanding the interaction between `FT2232H` and `Spartan6` FPGA.
 msp6prog use `JTAG` as configuration interface for FPGA.
-Program support a GUI interface under windows system by wxPython.
+Program support a GUI interface under Windows system by wxPython.
+Control hardware using FTDI API (ftdXX.dll) by msp6prog.dll build from Visual C++ 2008 Express.
 Tested on Win7 x64 with Minispartan6+ [6SLX9].
 This tool would to be useful, but may not comprehensive for all condition.
+
+I wish it could be ready Flash Programming function before the course
+`6.004.2x Computation Structures: Programmable Architectures`.
+But there is no clear schedule to accomplish it.
 
 ##How to use?
 
 Pre-requirement:
-* 1. Intall driver from http://www.ftdichip.com/Drivers/D2XX.htm
+* 1. Intall driver `CDM v2.12.00 WHQL Certified.exe`
+  * from http://www.ftdichip.com/Drivers/D2XX.htm
 * 2. Check only one FT2232H Device (Minispartan6+) plug on the USB.
 
 ####Easy Way:
@@ -50,8 +56,37 @@ Pre-requirement:
   * jtag_cfgfpga - Configure FPGA by CFG_IN IR command and bitstream.
   * con_init - initial console window to log process.
   * con_cls - clear console window screen.
-  
-Contact FPGA is done, but Flash is another problem.
+
+* msp6para.py - all parameters related to msp6prog.dll
+  * dctrlcmd_t - catalog commands for FT2232H by bit/byte operation.
+    * bycmd - byte operation command
+    * bicmd - bit operation command
+  * jtagpara_t - FT2232H and JTAG preferences
+    * handle - FT2232H ID in Windows hardware management system
+    * freq - Frequency setting by Hz, default set 30000000 (30M) Hz.
+    * devidx - Device Index, default set 0 in v0.1.
+    * cmd_tms - FT2232H MPSSE command to control JTAG TMS(Test Mode Select) signal.
+    * ir - FT2232H MPSSE command for IR(Instruction Register) operation
+    * drlo - FT2232H MPSSE command for DR(Data Register) LSB first Output operation
+    * drli - FT2232H MPSSE command for DR(Data Register) LSB first Input operation
+    * drmo - FT2232H MPSSE command for DR(Data Register) MSB first Output operation
+    * drmi - FT2232H MPSSE command for DR(Data Register) MSB first Input operation
+  * ircmd_t - JTAG IR command parameters.
+    * cmd - Command value by Xilinx ug380 Table 10-2
+    * tckdly - TCK(Test Clock) delay for FPGA internal operation.
+    * name - Command name define in Xilinx ug380 Table 10-2
+  * fpgajcmd_t - FPGA JTAG Command List
+    * ir_len - IR length (bits) by ug380 Table 10-2
+    * dr_stride - DR data packet maxinum size (byte)
+      * form 1 to 0xFFFF by FTDI AN_108
+    * cmdlist - IR command list in array, see ircmd_list in msp6para.py.
+  * fpgapara_t - FPGA Properties, see fpga_arr in msp6para.py.
+    * name - FPGA Name in Xilinx ug380 Table 5-13
+    * idcode - FPGA IDCODE by Xilinx ug380 Table 5-13
+    * maxbits - FPGA configure size for readback, no usage yet.
+    * jcmd - JTAG command define in fpgajcmd_t.
+
+FPGA Configuration is done, but Flash Programming is another problem.
 
 ##Useful Reference
 
@@ -63,6 +98,7 @@ Contact FPGA is done, but Flash is another problem.
     * **Table 10-2: Spartan-6 FPGA Boundary-Scan Instructions**
     * **Table 5-13: ID Codes**
     * **Table 10-4: Single Device Configuration Sequence**
+    * **Figure 10-1: Typical JTAG Architecture**
     * Table 5-5: Spartan-6 FPGA Bitstream Length
     * Table 6-5: Status Register Readback Command Sequence (JTAG)
   * Bitstream File Format
@@ -88,7 +124,7 @@ Contact FPGA is done, but Flash is another problem.
 ##Development Task List
 - [x] FPGA Configuration
 - [ ] Flash Programming
-  * http://www.scarabhardware.com/forums/topic/boot-from-on-board-spi-flash/
+  * reference: http://www.scarabhardware.com/forums/topic/boot-from-on-board-spi-flash/
 
 ##License
 I choose MIT License for free to use this program.
