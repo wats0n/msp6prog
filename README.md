@@ -3,7 +3,7 @@
 This is a side-project on `Windows` for understanding the interaction between `FT2232H` and `Spartan6` FPGA. msp6prog use `JTAG` as FPGA configuration interface.
   * GUI interface on Windows implemented by wxPython.
   * Control hardware msp6prog.dll build from Visual C++ 2008 Express.
-    *Using FTDI API (ftdXX.dll).
+    * Using FTDI API (ftdXX.dll).
   * Tested on Win7 x64 with Minispartan6+ [6SLX9].
 This tool would to be useful, but may not comprehensive for all condition.
 
