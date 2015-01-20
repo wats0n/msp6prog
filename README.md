@@ -15,7 +15,7 @@ But there is no clear schedule to accomplish it.
 
 ##How to use?
 
-Pre-requirement:
+######Pre-requirement:
 * 1. Intall driver `CDM v2.12.00 WHQL Certified.exe`
   * from http://www.ftdichip.com/Drivers/D2XX.htm
 * 2. Check only one FT2232H Device (Minispartan6+) plug on the USB.
