@@ -26,6 +26,7 @@ But there is no clear schedule to accomplish it.
 * 1. Download packed executable: [msp6prog_v0.1_win32.7z](https://github.com/wats0n/msp6prog/releases/download/v0.1_freeze/msp6prog_v0.1_win32.7z)
 * 2. Extract and execute msp6prog.exe
 * 3. Select Bitstream file and wait finish information on console.
+https://www.youtube.com/watch?v=FXeqhKWeVoI
 ![MSP6 Example](/images/msp6prog_v0.1_usecase.png)
 
 **Hard Way:**
