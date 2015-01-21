@@ -15,6 +15,8 @@ But there is no clear schedule to accomplish it.
 
 ##How to use?
 
+#Misfunction on 6SLX25 board, debugging.
+
 ######Pre-requirement:
 * 1. Intall driver `CDM v2.12.00 WHQL Certified.exe`
   * from http://www.ftdichip.com/Drivers/D2XX.htm
